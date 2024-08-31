@@ -1,0 +1,6 @@
+CREATE TABLE Usuarios (
+    id INT PRIMARY KEY AUTO_INCREMENT, -- Campo id con auto-incremento
+    nombre VARCHAR(100) NOT NULL, -- Campo nombre, obligatorio
+    email VARCHAR(100) NOT NULL UNIQUE, -- Campo email, obligatorio y único
+    contrasena VARCHAR(255) NOT NULL -- Campo contraseña, obligatorio
+);
